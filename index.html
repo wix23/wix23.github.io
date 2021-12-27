@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family; Arial;
+    padding: 10px;
+    background: #fd7282;
+}
+
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #f4b0b0;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/*style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Change color on hover */
+.topnav a:hover {
+    background-color: #e489f4;
+    color: #7cd4fb;
+}
+
+/*creat two unequal columns that floats next to each other */
+/* left columns */
+.leftcolumns {
+    float: left;
+    width: 75%;
+}
+
+/*right columns */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background: #895ce6;
+    padding-left: 20px;
+}
+
+/*fake image */
+.fakeimg {
+    background-color: gray;
+    width: 100%;
+    padding: 20px;
+}
+
+/*Add a card effect for articles */
+.card {
+    background-color: #7cd4fb;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4b0b0;
+    margin-top: 20px;
+}
+
+/*responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumns, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*responsive layoput - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>William W S</h1>
+    <p>Resize the browser window to see the effect</p>
+</div>
+
+<div class="topnav">
+    <a href="Index.html">Home</a>
+    <a href="About us.html">About Us</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact us.html" style="float:right">Contact Us</a>
+  </div>
+
+
+<div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>My Project</h2>
+        <h5>Make video game</h5>
+        <img src="download.jpg" alt="Liptint" width="600" height="400">
+        <p>bentuk produk yang dihasilkan oleh RPG maker MV adalah produk video gim dengan genre JRPG tuned based yang dimana para pemain diharuskan untuk menggunakan strategi dalam memilah apa yang harus di lakukan agar pemain dapat mencapai tujuannya. JRPG sendiri dikenal pula sebagai genre yang diisi oleh narasi-narasi yang cukup padat dan banyak</p>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Engine That I Used</h2>
+            <h5>RPG Maker MV (Kadokawa</h5>
+            <img src="Kodokawa Logo.png" alt="Liptint" width="600" height="400">
+            <p>Kadokawa adalah perusahaan yang bergerak di bidang hiburan seperti film, musik, bahkan video gim yang berasal dari jepang. penggunaan engine ini bukan tanpa maksud, engine yang di buat oleh perusahaan kadokawa terbilang cukup mudah untuk digunakan dan tidak memakan sumberdaya yang cuku besar sehingga produksi video gim jauh lebih cepat dan murah ketimbang menggunakan engine lain seperti unreal engine, unity, dan lain sebagainya.</p>
+          </div>
+          </div>
+  
+<div class="footer">
+  <p>Author: 12180251 - William Wiriyanata Suyanto<br>
+  <a href="mailto:Williamwiriyanatasuyanto@gmail.com">Williamwiriyanatasuyanto@gmail.com</a></p>
+  <a href="https://www.instagram.com/williamashq44/"><img src="IG.png" width="50" height="50"></a>
+  <a href="https://www.facebook.com/profile.php?id=100012736230290"><img src="facebook.png" width="50" height="50"></a>
+  <a href="https://vt.tiktok.com/ZSem9Csr6/"><img src="tiktok.png" width="50" height="50"></a>
+</div>
+  
+</body>
+</html>

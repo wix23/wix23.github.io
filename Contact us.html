@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #fd7282;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #f4b0b0;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #e489f4;
+    color: #7cd4fb;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-image: url(dufan.jpg);
+  width: 100%;
+  background-repeat:no-repeat;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #7cd4fb;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #f4b0b0;
+  margin-top: 20px;
+}
+
+.mail{
+		width: 730px;
+		margin: 10px auto;
+		border: 1px solid #ddd;
+		padding: 10px;
+	}
+.mail div{
+		padding: 5px 0;
+		border-bottom: 1px solid #ddd;
+	}
+label{
+		width: 100px;
+		display: inline-block;
+	}
+.bottom{
+		font-size: 12px;
+		text-align: right;
+	}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+</div>
+
+<div class="topnav">
+  <a href="Index.html">Home</a>
+  <a href="About us.html">About Us</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact us.html" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h2>CONTACT US</h2>
+      <h5>Any question, please fill the form to contact our email</h5>
+      <div class="mail">
+        <form action="send_mail.php" method="post">
+            
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+    
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" name="subject">
+            </div>
+    
+            <div>
+              <label for="Jns_pesan :">Message</label>
+              <select name="jns_pesan">
+                <option value="saran">Saran</option>
+                <option value="komentar">Komentar</option>
+                <option value="keluhan">Keluhan</option>
+              </select>
+          </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+    
+            <div><input type="submit" value="Send email"></div>
+    
+        </form>
+    </div>
+    </div>
+</div>
+<div class="footer">
+  <p>Author: 12180251 - William Wiriyanata Suyanto<br>
+  <a href="mailto:Williamwiriyanatasuyanto@gmail.com">Williamwiriyanatasuyanto@gmail.com</a></p>
+  <a href="https://www.instagram.com/williamashq44/"><img src="IG.png" width="50" height="50"></a>
+  <a href="https://www.facebook.com/profile.php?id=100012736230290"><img src="facebook.png" width="50" height="50"></a>
+  <a href="https://vt.tiktok.com/ZSem9Csr6/"><img src="tiktok.png" width="50" height="50"></a>
+</div>
+
+</body>
+</html>
